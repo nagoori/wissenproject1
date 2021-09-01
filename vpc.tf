@@ -23,7 +23,7 @@ resource "aws_internet_gateway" "internet-gateway" {
 resource "aws_subnet" "pubsubnet-1" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.pubsubnet-1-cidr
-  availability_zone       = "us-east-2a"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = true
 
   tags = {
@@ -36,7 +36,7 @@ resource "aws_subnet" "pubsubnet-1" {
 resource "aws_subnet" "pubsubnet-2" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.pubsubnet-2-cidr
-  availability_zone       = "us-east-2b"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = true
 
   tags = {
@@ -75,7 +75,7 @@ resource "aws_route_table_association" "pubsubnet-2-route-table-association" {
 resource "aws_subnet" "private-subnet-1" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.private-subnet-1-cidr
-  availability_zone       = "us-east-2a"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = false
 
   tags = {
@@ -87,7 +87,7 @@ resource "aws_subnet" "private-subnet-1" {
 resource "aws_subnet" "private-subnet-2" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.private-subnet-2-cidr
-  availability_zone       = "us-east-2b"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = false
 
   tags = {
@@ -99,7 +99,7 @@ resource "aws_subnet" "private-subnet-2" {
 resource "aws_subnet" "private-subnet-3" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.private-subnet-3-cidr
-  availability_zone       = "us-east-2a"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = false
 
   tags = {
@@ -111,7 +111,7 @@ resource "aws_subnet" "private-subnet-3" {
 resource "aws_subnet" "private-subnet-4" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.private-subnet-4-cidr
-  availability_zone       = "us-east-2b"
+  availability_zone       = "ap-southeast-1"
   map_public_ip_on_launch = false
 
   tags = {

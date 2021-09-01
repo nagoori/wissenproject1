@@ -12,8 +12,8 @@ data "template_file" "user_data" {
 }
 
 resource "aws_instance" "jenkins" {
-  ami             = "ami-0443305dabd4be2bc"
-  instance_type   = "t2.micro"
+  ami             = "ami-0f511ead81ccde020"
+  instance_type   = "t2.xlarge"
   subnet_id       = aws_subnet.private-subnet-1.id
   security_groups = ["${aws_security_group.jenkins-security-group.id}", "${aws_security_group.bastion-security-roup.id}"]
   key_name        = "${aws_key_pair.petclinic.id}"

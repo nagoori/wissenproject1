@@ -3,38 +3,11 @@ resource "aws_db_subnet_group" "db-subnet" {
   name = "db-sbnet"
   # vpc_id      = "aws_vpc.terraform-vpc.id"
   subnet_ids = [aws_subnet.private-subnet-3.id, aws_subnet.private-subnet-4.id]
-  # availability_zone       = ["${ap-south-1a}","${ap-south-1b}"]
+  # availability_zone       = ["${ap-southeast-1}","${ap-south-1b}"]
   tags = {
     Name = "My DB subnet group"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
