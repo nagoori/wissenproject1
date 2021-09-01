@@ -1,11 +1,6 @@
 #!/bin/bash
 sudo yum -y update
 
-
-echo "Install git"
-yum install -y git
-
-
 #!/bin/bash 
 #Download the java
 cd /tmp 
