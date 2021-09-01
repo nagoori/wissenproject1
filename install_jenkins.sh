@@ -5,12 +5,6 @@ sudo yum -y update
 echo "Install git"
 yum install -y git
 
-echo "Install Docker engine"
-yum update -y
-yum install docker -y
-#sudo usermod -a -G docker jenkins
-#sudo service docker start
-sudo chkconfig docker on
 
 #!/bin/bash 
 #Download the java
