@@ -108,16 +108,16 @@ resource "aws_subnet" "private-subnet-3" {
 }
 # Create Private Subnet 4
 # terraform aws create subnet
-resource "aws_subnet" "private-subnet-4" {
-  vpc_id                  = aws_vpc.terraform-vpc.id
-  cidr_block              = var.private-subnet-4-cidr
-  availability_zone       = "ap-southeast-1d"
-  map_public_ip_on_launch = false
+# resource "aws_subnet" "private-subnet-4" {
+#   vpc_id                  = aws_vpc.terraform-vpc.id
+#   cidr_block              = var.private-subnet-4-cidr
+#   availability_zone       = "ap-southeast-1d"
+#   map_public_ip_on_launch = false
 
-  tags = {
-    Name = "Private Subnet 4 - DB"
-  }
-}
+#   tags = {
+#     Name = "Private Subnet 4 - DB"
+#   }
+# }
 #create nat gate way
 #create elp ip allocation nat gate  way
 
