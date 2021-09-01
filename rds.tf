@@ -1,4 +1,3 @@
-
 resource "aws_db_subnet_group" "db-subnet" {
   name = "db-sbnet"
   # vpc_id      = "aws_vpc.terraform-vpc.id"
@@ -29,7 +28,6 @@ resource "aws_db_instance" "my-test-sql" {
   vpc_security_group_ids  = ["${aws_security_group.rds-security-group.id}"]
 
 
-
 }
 
 # # resource "aws_db_subnet_group" "my-rds-db-subnet" {
@@ -58,42 +56,3 @@ resource "aws_db_instance" "my-test-sql" {
 # #   to_port           = 0
 # #   type              = "egress"
 # }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

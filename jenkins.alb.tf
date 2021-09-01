@@ -32,9 +32,6 @@ resource "aws_lb_target_group_attachment" "testing" {
 }
 
 
-
-
-
 # listner
 
 

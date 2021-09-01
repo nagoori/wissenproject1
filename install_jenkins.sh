@@ -1,6 +1,3 @@
-#!/bin/bash
-sudo yum -y update
-
 #!/bin/bash 
 #Download the java
 cd /tmp 
@@ -12,12 +9,3 @@ apt-get install jenkins -y
 service jenkins status
 service jenkis start
 service jenkins enable
-
- 
-
-
-
-
-
-
-
